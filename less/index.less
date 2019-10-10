@@ -54,6 +54,244 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
 }
 
+body {
+	width: 90%;
+	margin: 0 5% 0 5%;
+	
+}
+
+@main-color: papayawhip;
+@off-color: lightsalmon;
+
+.flex () {
+	display: flex;
+}
+
+.rounded () {
+	border-radius: 20px;
+}
+
+// Header Styles
+header {
+	.flex;
+	justify-content: flex-end;
+	margin-right: 5%;
+
+	@media (max-width: 500px) {
+		justify-content: center;
+	}
+
+	.links {
+		.flex;
+		justify-content: space-around;
+		text-align: center;
+
+		@media (max-width: 500px) {
+			margin-right: 10%;
+			flex-direction: column;
+		}
+	}
+
+	a {
+		font-size: 1.5rem;
+		text-decoration: none;
+		margin: 10%;
+		padding: 5%;
+		color: black;
+
+		@media (max-width: 500px) {
+			width: 100%;
+			padding: 1rem;
+			border: 3px solid @off-color;
+		}
+	} //closes a styles
+} // closes header styles
+
+
+// Jumbotron Styles
+.jumbotron {
+	.flex;
+	flex-direction: column;
+	background-color: @main-color;
+	border: 1px solid @main-color;
+	.rounded;
+	
+	hr {
+		width: 95%;
+		border: 1px solid grey;
+	}
+
+	br {
+		margin: 5%;
+	}
+
+	h1 {
+		font-size: 4rem;
+	}
+
+	h3{
+		font-size: 2.5rem;
+	}
+
+	h4 {
+		font-size: 2rem;
+	}
+	
+	.img {
+		.flex;
+		justify-content: flex-start;
+		padding: 5% 0 0 5%;
+		margin: 0 5% 5% 0;
+	}
+
+	img {
+		.rounded;
+		width: 25%;
+		height: auto;
+
+		@media (max-width: 500px) {
+			width: 50%;
+		}
+	}
+
+	.upper {
+		.flex;
+		flex-direction: row;
+		justify-content: space-around;
+
+		@media (max-width: 500px) {
+			flex-direction: column;
+		}
+	}
+
+	.lower{
+		.flex;
+		justify-content: center;
+	}
+
+	.titles {
+		.flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 2%;
+		padding: 2%;
+	}
+
+	.button {
+			text-decoration: none;
+			border: 1px solid @off-color;
+			.rounded;
+			background-color: @off-color;
+			color: white;
+			width: 12%;
+			padding: 1rem;
+			font-size: 1.9rem;
+			text-align: center;	
+			
+			@media (max-width: 500px) {
+				width: 25%;
+			}
+	}//closes button
+}//closes jumbotron
+
+.main {
+	margin: 5%;
+
+	.boxes {
+		.flex;
+		margin: 2%;
+
+		@media (max-width: 500px) {
+			flex-direction: column;
+			width: 100%;
+		}
+	}//closes boxes
+
+	.box2 {
+		width: 40%;
+		margin: 2% 3% 2% 3%;
+
+		@media (max-width: 500px) {
+			width: 100%;
+		}
+
+		h4 {
+			font-size: 2.5rem;
+		}//closes h4
+
+		p {
+			font-size: 1.8rem;
+			margin: 1rem;
+		}
+
+		li {
+			list-style-type: disc;
+			font-size: 1.8rem;
+			margin: 1rem 0rem 1rem 3rem;
+		}
+
+		@media (max-width: 500px) {
+			.flex;
+			flex-direction: column;
+		}
+	}//closes box2
+
+	.table {
+		.flex;
+		flex-direction: row;
+		width: 100%;
+		font-size: 2rem;
+
+		@media (max-width: 500px) {
+			width: 120%;
+			margin: 0 0 0 -10%;
+			padding: 0;
+			border: 1px solid grey;
+		}
+
+		.row {
+			.flex;
+			flex-direction: column;
+			width: 100%;
+
+			.heading {
+				background-color: @off-color;
+				width: 100%;
+			}
+
+			p {
+				padding: 1%;
+				margin: 1%;
+				border-bottom: 1px solid grey;
+				width: 100%;
+
+				@media (max-width: 500px) {
+					padding: 5%;
+				}
+			}
+		}//closes row
+
+
+
+
+	}//closes table
+}//closes main
+
+#contact {
+	margin: 10%;
+	background-color: @main-color;
+	.rounded;
+	padding: 5%;
+
+	h3 {
+		font-size: 2.8rem;
+	}
+
+	p {
+		font-size: 1.8rem;
+	}
+}

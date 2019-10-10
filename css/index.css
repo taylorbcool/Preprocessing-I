@@ -1,1 +1,338 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+body {
+  width: 90%;
+  margin: 0 5% 0 5%;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+@media (max-width: 500px) {
+  header {
+    justify-content: center;
+  }
+}
+header .links {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  header .links {
+    margin-right: 10%;
+    flex-direction: column;
+  }
+}
+header a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin: 10%;
+  padding: 5%;
+  color: black;
+}
+@media (max-width: 500px) {
+  header a {
+    width: 100%;
+    padding: 1rem;
+    border: 3px solid lightsalmon;
+  }
+}
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+  background-color: papayawhip;
+  border: 1px solid papayawhip;
+  border-radius: 20px;
+}
+.jumbotron hr {
+  width: 95%;
+  border: 1px solid grey;
+}
+.jumbotron br {
+  margin: 5%;
+}
+.jumbotron h1 {
+  font-size: 4rem;
+}
+.jumbotron h3 {
+  font-size: 2.5rem;
+}
+.jumbotron h4 {
+  font-size: 2rem;
+}
+.jumbotron .img {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5% 0 0 5%;
+  margin: 0 5% 5% 0;
+}
+.jumbotron img {
+  border-radius: 20px;
+  width: 25%;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .jumbotron img {
+    width: 50%;
+  }
+}
+.jumbotron .upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .jumbotron .upper {
+    flex-direction: column;
+  }
+}
+.jumbotron .lower {
+  display: flex;
+  justify-content: center;
+}
+.jumbotron .titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2%;
+  padding: 2%;
+}
+.jumbotron .button {
+  text-decoration: none;
+  border: 1px solid lightsalmon;
+  border-radius: 20px;
+  background-color: lightsalmon;
+  color: white;
+  width: 12%;
+  padding: 1rem;
+  font-size: 1.9rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .jumbotron .button {
+    width: 25%;
+  }
+}
+.main {
+  margin: 5%;
+}
+.main .boxes {
+  display: flex;
+  margin: 2%;
+}
+@media (max-width: 500px) {
+  .main .boxes {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.main .box2 {
+  width: 40%;
+  margin: 2% 3% 2% 3%;
+}
+@media (max-width: 500px) {
+  .main .box2 {
+    width: 100%;
+  }
+}
+.main .box2 h4 {
+  font-size: 2.5rem;
+}
+.main .box2 p {
+  font-size: 1.8rem;
+  margin: 1rem;
+}
+.main .box2 li {
+  list-style-type: disc;
+  font-size: 1.8rem;
+  margin: 1rem 0rem 1rem 3rem;
+}
+@media (max-width: 500px) {
+  .main .box2 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.main .table {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  .main .table {
+    width: 120%;
+    margin: 0 0 0 -10%;
+    padding: 0;
+    border: 1px solid grey;
+  }
+}
+.main .table .row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.main .table .row .heading {
+  background-color: lightsalmon;
+  width: 100%;
+}
+.main .table .row p {
+  padding: 1%;
+  margin: 1%;
+  border-bottom: 1px solid grey;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .main .table .row p {
+    padding: 5%;
+  }
+}
+#contact {
+  margin: 10%;
+  background-color: papayawhip;
+  border-radius: 20px;
+  padding: 5%;
+}
+#contact h3 {
+  font-size: 2.8rem;
+}
+#contact p {
+  font-size: 1.8rem;
+}
